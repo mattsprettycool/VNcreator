@@ -32,12 +32,12 @@ public class TextImporter : MonoBehaviour
     }
     void Update()
     {
-        //sets text box text to whatever is at line[currline] in the tFile
-        outText.text = lines[currLine];
-        //increases line # with enter button press
-        if (Input.GetKeyDown(KeyCode.Return) && currLine != stopLine)
-        {
-            currLine++;
-        }
+            //sets text box text to whatever is at line[currline] in the tFile
+            outText.text = lines[currLine];
+            //increases line # with enter button press
+            if (Input.GetKeyDown(KeyCode.Return) && currLine != stopLine)
+            {
+                currLine++;
+            }
     }
 }
