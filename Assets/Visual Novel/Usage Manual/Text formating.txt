@@ -1,0 +1,8 @@
+//sample normal start event, each character has it's own brace and you can use this to start a scene with certain characters, or to start a scene that you referenced in a choice. It should be noted that some transitions and all backgrounds can be referenced in the first character only and you could also just start a scene with no character and a background
+^({},{})
+
+//sample normal text event, most parameters are optional.
+{Name:"string", TalkingTo:"file", Sprite:"file", Position:"values", Effect:"file", Voice:"file", SoundEffect:"file", Background:"file", Choices:"["Choice1":"file"],...", Font:"file", TextSpeed"int"}>TEXT GOES HERE
+
+//sample normal end event, you don't need the parentheses and events for this one, but you can do some fade out stuff with this.
+<({},{})

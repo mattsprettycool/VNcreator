@@ -11,6 +11,6 @@ public class VisualNovelController : MonoBehaviour {
     public void LoadNewScene(string filePath)
     {
         TextAsset textFile = (TextAsset)AssetDatabase.LoadAssetAtPath("Assets/Visual Novel/Text/" + filePath, typeof(TextAsset));
-        Debug.Log(textFile.text);
+        gameObject.GetComponent<TextController>().SetTextBoxText(textFile.text, .005f);
     }
 }
