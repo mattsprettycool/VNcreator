@@ -3,3 +3,5 @@
 {Name:"Matt",Voice:"justmetalking.ogg",speed:".05"}>Whaaaaaaaaaaaaaaaaaaaaat?
 {Name:"???",Voice:"alternatetalking.ogg"}>You have like 800 more planned features to add, idot.
 {Name:"Matt",Voice:"justmetalking.ogg",speed:".075"}>Awwwwwww...
+{}>Matt went on to cry for ten hours straight.
+{Name:"Testline"}>This line is yet another test.

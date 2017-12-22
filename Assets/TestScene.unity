@@ -634,6 +634,7 @@ GameObject:
   - component: {fileID: 1482677021}
   - component: {fileID: 1482677020}
   - component: {fileID: 1482677019}
+  - component: {fileID: 1482677022}
   m_Layer: 5
   m_Name: NamePanel
   m_TagString: Untagged
@@ -713,6 +714,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482677017}
+--- !u!114 &1482677022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482677017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9ddc92c154398468d86b39047e0fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1827865879
 GameObject:
   m_ObjectHideFlags: 0

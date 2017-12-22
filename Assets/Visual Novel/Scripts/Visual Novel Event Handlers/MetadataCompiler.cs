@@ -6,6 +6,7 @@ public class MetadataCompiler : MonoBehaviour {
     public MetadataObject CompileMetadata(string metadata)
     {
         MetadataObject mo = (MetadataObject)ScriptableObject.CreateInstance(typeof(MetadataObject));
+        if(!metadata.Equals("{}"))
         foreach (string obj in metadata.Split(','))
         {
             string noSpaces = obj.Replace(" ", "");
