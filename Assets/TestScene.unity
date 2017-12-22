@@ -140,8 +140,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.63, y: 0.37}
-  m_SizeDelta: {x: 146.55, y: 34.55}
+  m_AnchoredPosition: {x: 0.0000010728836, y: -0.000000834465}
+  m_SizeDelta: {x: 125.45, y: 34.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95862859
 MonoBehaviour:
@@ -933,10 +933,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2046374069}
-  - component: {fileID: 2046374071}
-  - component: {fileID: 2046374070}
-  - component: {fileID: 2046374072}
   - component: {fileID: 2046374073}
+  - component: {fileID: 2046374071}
+  - component: {fileID: 2046374072}
+  - component: {fileID: 2046374074}
   m_Layer: 0
   m_Name: VisualNovelController
   m_TagString: VisualNovelController
@@ -957,17 +957,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2046374070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2046374068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c273cda3d66b81240b8c8dcafedd59f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2046374071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1070,3 +1059,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &2046374074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046374068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6e04804fa31fe45934f8fbe3f95939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

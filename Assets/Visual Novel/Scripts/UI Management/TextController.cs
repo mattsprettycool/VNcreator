@@ -13,6 +13,18 @@ public class TextController : MonoBehaviour {
     bool usingVoice = false;
     bool spokeAlready = false;
     AudioClip voice;
+    public void UseTextLine(string metadata, string text)
+    {
+        MetadataObject myMetadata = gameObject.GetComponent<MetadataCompiler>().CompileMetadata(metadata);
+        SetNameBoxText(myMetadata.GetName());
+        if (myMetadata.HasVoice())
+        {
+            SetTextBoxText(text, myMetadata.GetSpeed(), myMetadata.GetVoice());
+        }
+        else
+            SetTextBoxText(text, myMetadata.GetSpeed());
+
+    }
     public void SetTextBoxText(string text, float speedRatio)
     {
         currentText = text;

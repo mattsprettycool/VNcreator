@@ -21,8 +21,9 @@ public class VisualNovelController : MonoBehaviour {
         TextAsset textFile = (TextAsset)AssetDatabase.LoadAssetAtPath("Assets/Visual Novel/Text/" + filePath, typeof(TextAsset));
         rawTextLines = textFile.text.Split('\n');
         SplitMetadata(rawTextLines);
-        gameObject.GetComponent<TextController>().SetTextBoxText(textLines[0], .005f, debugVoice);
-        gameObject.GetComponent<TextController>().SetNameBoxText(metadataLines[0]);
+
+        gameObject.GetComponent<TextController>().UseTextLine(metadataLines[0], textLines[0]);
+
         textFileLine = 1;
     }
     private void Update()
@@ -32,8 +33,7 @@ public class VisualNovelController : MonoBehaviour {
         {
             if (gameObject.GetComponent<TextController>().SceneIsFinishedFlowing() && continueKeyDown)
             {
-                gameObject.GetComponent<TextController>().SetTextBoxText(textLines[textFileLine], .005f, debugVoice);
-                gameObject.GetComponent<TextController>().SetNameBoxText(metadataLines[textFileLine]);
+                gameObject.GetComponent<TextController>().UseTextLine(metadataLines[textFileLine], textLines[textFileLine]);
                 textFileLine++;
             }else if (continueKeyDown)
             {
